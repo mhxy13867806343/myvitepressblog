@@ -1,0 +1,614 @@
+/**
+ * 二次元风格主题 - 勿扰の博客
+ * Anime Style Theme
+ */
+
+/* ==================== 颜色变量 ==================== */
+:root {
+  /* 主色调 - 樱花粉 */
+  --vp-c-brand-1: #ff6b9d;
+  --vp-c-brand-2: #ff8fb8;
+  --vp-c-brand-3: #ffa8c9;
+  --vp-c-brand-soft: rgba(255, 107, 157, 0.14);
+  
+  /* 辅助色 */
+  --anime-purple: #9b59b6;
+  --anime-blue: #3498db;
+  --anime-cyan: #1abc9c;
+  --anime-gold: #f39c12;
+  --anime-coral: #e74c3c;
+  
+  /* 渐变背景 */
+  --anime-gradient: linear-gradient(135deg, #ffecd2 0%, #fcb69f 50%, #ff9a9e 100%);
+  --anime-gradient-dark: linear-gradient(135deg, #2d1b4e 0%, #1a1a2e 50%, #16213e 100%);
+  
+  /* 卡片阴影 */
+  --anime-shadow: 0 8px 32px rgba(255, 107, 157, 0.15);
+  --anime-shadow-hover: 0 16px 48px rgba(255, 107, 157, 0.25);
+  
+  /* 圆角 */
+  --anime-radius: 16px;
+  --anime-radius-sm: 8px;
+  
+  /* 字体 */
+  --vp-font-family-base: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 深色模式 */
+.dark {
+  --vp-c-brand-1: #ff8fb8;
+  --vp-c-brand-2: #ffa8c9;
+  --vp-c-brand-3: #ffc4db;
+  --anime-shadow: 0 8px 32px rgba(255, 143, 184, 0.2);
+  --anime-shadow-hover: 0 16px 48px rgba(255, 143, 184, 0.3);
+}
+
+/* ==================== 全局样式 ==================== */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body {
+  font-family: var(--vp-font-family-base);
+}
+
+/* 选中文本样式 */
+::selection {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+/* ==================== 导航栏 ==================== */
+.VPNav {
+  backdrop-filter: blur(12px) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-bottom: 2px solid var(--vp-c-brand-soft) !important;
+}
+
+.dark .VPNav {
+  background: rgba(30, 30, 46, 0.9) !important;
+}
+
+.VPNavBar .title {
+  font-weight: 700 !important;
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--anime-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 导航链接悬浮效果 */
+.VPNavBarMenuLink:hover,
+.VPNavScreenMenuLink:hover {
+  color: var(--vp-c-brand-1) !important;
+  transform: translateY(-2px);
+}
+
+/* ==================== Hero区域 ==================== */
+.VPHero {
+  position: relative;
+  overflow: hidden;
+}
+
+.VPHero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 107, 157, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(155, 89, 182, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(52, 152, 219, 0.2) 0%, transparent 40%);
+  pointer-events: none;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+.VPHero .name {
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--anime-purple), var(--anime-blue)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  animation: shimmer 3s ease-in-out infinite;
+  background-size: 200% auto !important;
+}
+
+@keyframes shimmer {
+  0%, 100% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+}
+
+.VPHero .text {
+  color: var(--vp-c-text-2);
+  font-weight: 500;
+}
+
+.VPHero .tagline {
+  background: linear-gradient(90deg, var(--vp-c-text-2), var(--vp-c-brand-1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero 按钮 */
+.VPHero .action .VPButton {
+  border-radius: 50px !important;
+  padding: 12px 32px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.VPHero .action .VPButton.brand {
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--anime-purple)) !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(255, 107, 157, 0.4) !important;
+}
+
+.VPHero .action .VPButton.brand:hover {
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow: 0 8px 25px rgba(255, 107, 157, 0.5) !important;
+}
+
+.VPHero .action .VPButton.alt {
+  border: 2px solid var(--vp-c-brand-1) !important;
+  color: var(--vp-c-brand-1) !important;
+  background: transparent !important;
+}
+
+.VPHero .action .VPButton.alt:hover {
+  background: var(--vp-c-brand-soft) !important;
+  transform: translateY(-3px) !important;
+}
+
+/* ==================== Feature 卡片 ==================== */
+.VPFeature {
+  border-radius: var(--anime-radius) !important;
+  border: 2px solid transparent !important;
+  background: linear-gradient(var(--vp-c-bg), var(--vp-c-bg)) padding-box,
+              linear-gradient(135deg, var(--vp-c-brand-1), var(--anime-purple), var(--anime-blue)) border-box !important;
+  box-shadow: var(--anime-shadow) !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.VPFeature::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: var(--anime-shadow-hover) !important;
+}
+
+.VPFeature:hover::before {
+  left: 100%;
+}
+
+.VPFeature .icon {
+  font-size: 48px !important;
+  margin-bottom: 16px !important;
+}
+
+.VPFeature .title {
+  font-weight: 700 !important;
+  font-size: 1.2rem !important;
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--anime-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ==================== 侧边栏 ==================== */
+.VPSidebar {
+  border-right: 2px solid var(--vp-c-brand-soft) !important;
+  background: linear-gradient(180deg, var(--vp-c-bg) 0%, var(--vp-c-bg-soft) 100%) !important;
+}
+
+.VPSidebarItem .text {
+  transition: all 0.3s ease !important;
+}
+
+.VPSidebarItem:hover .text {
+  color: var(--vp-c-brand-1) !important;
+  padding-left: 8px !important;
+}
+
+.VPSidebarItem.is-active .text {
+  color: var(--vp-c-brand-1) !important;
+  font-weight: 600 !important;
+}
+
+/* ==================== 内容区域 ==================== */
+.vp-doc h1 {
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--anime-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-bottom: 3px solid var(--vp-c-brand-soft);
+  padding-bottom: 16px;
+}
+
+.vp-doc h2 {
+  border-left: 4px solid var(--vp-c-brand-1);
+  padding-left: 16px;
+  margin-top: 48px;
+}
+
+.vp-doc h3 {
+  color: var(--anime-purple);
+}
+
+/* 代码块 */
+.vp-doc div[class*="language-"] {
+  border-radius: var(--anime-radius) !important;
+  border: 1px solid var(--vp-c-brand-soft) !important;
+  box-shadow: var(--anime-shadow) !important;
+}
+
+/* 链接样式 */
+.vp-doc a {
+  color: var(--vp-c-brand-1) !important;
+  text-decoration: none !important;
+  position: relative;
+}
+
+.vp-doc a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--vp-c-brand-1), var(--anime-purple));
+  transition: width 0.3s ease;
+}
+
+.vp-doc a:hover::after {
+  width: 100%;
+}
+
+/* 引用块 */
+.vp-doc blockquote {
+  border-left: 4px solid var(--vp-c-brand-1) !important;
+  background: var(--vp-c-brand-soft) !important;
+  border-radius: 0 var(--anime-radius-sm) var(--anime-radius-sm) 0 !important;
+  padding: 16px 20px !important;
+  font-style: italic;
+}
+
+/* 表格 */
+.vp-doc table {
+  border-radius: var(--anime-radius) !important;
+  overflow: hidden;
+  box-shadow: var(--anime-shadow) !important;
+}
+
+.vp-doc th {
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--anime-purple)) !important;
+  color: white !important;
+}
+
+/* ==================== 自定义组件样式 ==================== */
+
+/* 个人卡片 */
+.profile-card {
+  background: linear-gradient(135deg, var(--vp-c-bg), var(--vp-c-bg-soft));
+  border-radius: var(--anime-radius);
+  padding: 32px;
+  text-align: center;
+  box-shadow: var(--anime-shadow);
+  border: 2px solid var(--vp-c-brand-soft);
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--anime-shadow-hover);
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--vp-c-brand-1);
+  box-shadow: 0 0 20px rgba(255, 107, 157, 0.5);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 157, 0.5); }
+  50% { box-shadow: 0 0 40px rgba(255, 107, 157, 0.8); }
+}
+
+.profile-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 16px;
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--anime-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.profile-title {
+  color: var(--vp-c-text-2);
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* 技能标签 */
+.skill-tag {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 4px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  border: 1px solid var(--vp-c-brand-1);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: var(--vp-c-brand-1);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* 时间线 */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--vp-c-brand-1), var(--anime-purple), var(--anime-blue));
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 24px;
+  margin-bottom: 24px;
+  background: var(--vp-c-bg-soft);
+  border-radius: var(--anime-radius);
+  box-shadow: var(--anime-shadow);
+  border: 1px solid var(--vp-c-brand-soft);
+  transition: all 0.3s ease;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 30px;
+  width: 16px;
+  height: 16px;
+  background: var(--vp-c-brand-1);
+  border-radius: 50%;
+  border: 3px solid var(--vp-c-bg);
+  box-shadow: 0 0 10px var(--vp-c-brand-1);
+}
+
+.timeline-item:hover {
+  transform: translateX(5px);
+  box-shadow: var(--anime-shadow-hover);
+}
+
+.timeline-date {
+  display: inline-block;
+  padding: 4px 12px;
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--anime-purple));
+  color: white;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+  margin-bottom: 8px;
+}
+
+.timeline-company {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+}
+
+/* 项目卡片网格 */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.project-card {
+  background: var(--vp-c-bg-soft);
+  border-radius: var(--anime-radius);
+  padding: 24px;
+  box-shadow: var(--anime-shadow);
+  border: 2px solid transparent;
+  background: linear-gradient(var(--vp-c-bg-soft), var(--vp-c-bg-soft)) padding-box,
+              linear-gradient(135deg, var(--vp-c-brand-1), var(--anime-purple)) border-box;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--anime-shadow-hover);
+}
+
+.project-card h3 {
+  color: var(--vp-c-brand-1);
+  margin-bottom: 12px;
+}
+
+/* 联系方式卡片 */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--vp-c-bg-soft);
+  border-radius: var(--anime-radius);
+  box-shadow: var(--anime-shadow);
+  border: 1px solid var(--vp-c-brand-soft);
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: var(--anime-shadow-hover);
+  border-color: var(--vp-c-brand-1);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--vp-c-brand-soft);
+  border-radius: 12px;
+}
+
+.contact-info h4 {
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-info p {
+  color: var(--vp-c-text-2);
+  margin: 4px 0 0 0;
+  font-size: 0.9rem;
+}
+
+/* ==================== 动画效果 ==================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.VPContent {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* 樱花飘落动画 */
+.sakura {
+  position: fixed;
+  top: -10px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: sakura-fall linear infinite;
+}
+
+@keyframes sakura-fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+/* ==================== 滚动条美化 ==================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-soft);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--vp-c-brand-1), var(--anime-purple));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--vp-c-brand-2), var(--anime-purple));
+}
+
+/* ==================== 响应式 ==================== */
+@media (max-width: 768px) {
+  .VPHero .name {
+    font-size: 2rem !important;
+  }
+  
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==================== 打字机效果 ==================== */
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid var(--vp-c-brand-1);
+  white-space: nowrap;
+  animation: typing 3s steps(30) infinite, blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  0%, 100% { width: 0; }
+  50% { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}

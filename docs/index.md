@@ -1,0 +1,129 @@
+---
+layout: home
+
+hero:
+  name: "勿扰"
+  text: "前端开发工程师"
+  tagline: 用代码编织二次元梦想 ✨ | Vue.js 全栈 | AI 探索者
+  image:
+    src: /avatar.svg
+    alt: 勿扰
+  actions:
+    - theme: brand
+      text: 🎯 了解我
+      link: /about/
+    - theme: alt
+      text: 💼 工作经历
+      link: /work/
+    - theme: alt
+      text: 📧 联系我
+      link: /contact/
+
+features:
+  - icon: 🎨
+    title: Vue.js 全栈开发
+    details: 8年前端开发经验，精通 Vue.js 全家桶、Uniapp 跨端开发、微信小程序等，专注于用户体验与性能优化
+    link: /about/skills
+    linkText: 查看技能清单
+  - icon: 🚀
+    title: AI + 创业
+    details: 未来方向聚焦 AI 与创业领域，探索 AI 在前端开发中的应用，用技术驱动创新
+    link: /blog/ai
+    linkText: AI探索之旅
+  - icon: 💻
+    title: 丰富项目经验
+    details: 参与过电商平台、企业管理系统、数据可视化大屏、移动端H5、微信小程序等多类型项目开发
+    link: /projects/
+    linkText: 查看项目作品
+  - icon: 🌸
+    title: 二次元爱好者
+    details: 热爱动漫与二次元文化，相信代码也可以有灵魂，用技术创造美好
+    link: /contact/
+    linkText: 一起交流
+---
+
+<style>
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(135deg, #ff6b9d 30%, #9b59b6 70%);
+  --vp-home-hero-image-background-image: linear-gradient(135deg, #ff6b9d 30%, #9b59b6 70%);
+  --vp-home-hero-image-filter: blur(68px);
+}
+
+.VPHero .VPImage {
+  border-radius: 50%;
+  border: 4px solid #ff6b9d;
+  box-shadow: 0 0 30px rgba(255, 107, 157, 0.5);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+</style>
+
+## 🌟 欢迎来到我的二次元世界
+
+<div style="text-align: center; padding: 40px 20px; margin: 40px 0; background: linear-gradient(135deg, rgba(255, 107, 157, 0.1) 0%, rgba(155, 89, 182, 0.1) 100%); border-radius: 16px; border: 2px solid rgba(255, 107, 157, 0.3);">
+
+### ✨ 你好，我是勿扰
+
+来自浙江杭州的前端开发工程师，从 **2016年** 开始踏入前端开发领域。
+
+热爱技术，热爱生活，热爱二次元文化 🌸
+
+目前专注于 **Vue.js 全栈开发** 与 **AI 应用探索**
+
+</div>
+
+## 📊 技术栈一览
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; padding: 20px;">
+  <span style="padding: 8px 20px; background: linear-gradient(135deg, #41b883, #35495e); color: white; border-radius: 50px; font-weight: 500;">Vue.js</span>
+  <span style="padding: 8px 20px; background: linear-gradient(135deg, #f7df1e, #323330); color: #323330; border-radius: 50px; font-weight: 500;">JavaScript</span>
+  <span style="padding: 8px 20px; background: linear-gradient(135deg, #3178c6, #235a97); color: white; border-radius: 50px; font-weight: 500;">TypeScript</span>
+  <span style="padding: 8px 20px; background: linear-gradient(135deg, #07c160, #1aad19); color: white; border-radius: 50px; font-weight: 500;">微信小程序</span>
+  <span style="padding: 8px 20px; background: linear-gradient(135deg, #2b9939, #1a6d25); color: white; border-radius: 50px; font-weight: 500;">Uniapp</span>
+  <span style="padding: 8px 20px; background: linear-gradient(135deg, #e34c26, #f06529); color: white; border-radius: 50px; font-weight: 500;">HTML5</span>
+  <span style="padding: 8px 20px; background: linear-gradient(135deg, #264de4, #2965f1); color: white; border-radius: 50px; font-weight: 500;">CSS3</span>
+  <span style="padding: 8px 20px; background: linear-gradient(135deg, #cc6699, #a86a94); color: white; border-radius: 50px; font-weight: 500;">SCSS</span>
+</div>
+
+## 🔗 快速链接
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px 0;">
+
+<a href="https://github.com/mhxy13867806343" target="_blank" style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--vp-c-bg-soft); border-radius: 12px; text-decoration: none; border: 1px solid var(--vp-c-brand-soft); transition: all 0.3s ease;">
+  <span style="font-size: 24px;">📦</span>
+  <div>
+    <div style="font-weight: 600; color: var(--vp-c-text-1);">GitHub</div>
+    <div style="font-size: 12px; color: var(--vp-c-text-2);">查看我的开源项目</div>
+  </div>
+</a>
+
+<a href="https://juejin.cn/user/1310273588955581" target="_blank" style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--vp-c-bg-soft); border-radius: 12px; text-decoration: none; border: 1px solid var(--vp-c-brand-soft); transition: all 0.3s ease;">
+  <span style="font-size: 24px;">📝</span>
+  <div>
+    <div style="font-weight: 600; color: var(--vp-c-text-1);">掘金</div>
+    <div style="font-size: 12px; color: var(--vp-c-text-2);">阅读技术文章</div>
+  </div>
+</a>
+
+<a href="https://blog.lcs200.icu/" target="_blank" style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--vp-c-bg-soft); border-radius: 12px; text-decoration: none; border: 1px solid var(--vp-c-brand-soft); transition: all 0.3s ease;">
+  <span style="font-size: 24px;">🏠</span>
+  <div>
+    <div style="font-weight: 600; color: var(--vp-c-text-1);">原博客</div>
+    <div style="font-size: 12px; color: var(--vp-c-text-2);">blog.lcs200.icu</div>
+  </div>
+</a>
+
+<a href="/contact/" style="display: flex; align-items: center; gap: 12px; padding: 16px 20px; background: var(--vp-c-bg-soft); border-radius: 12px; text-decoration: none; border: 1px solid var(--vp-c-brand-soft); transition: all 0.3s ease;">
+  <span style="font-size: 24px;">💬</span>
+  <div>
+    <div style="font-weight: 600; color: var(--vp-c-text-1);">联系我</div>
+    <div style="font-size: 12px; color: var(--vp-c-text-2);">QQ / 微信</div>
+  </div>
+</a>
+
+</div>

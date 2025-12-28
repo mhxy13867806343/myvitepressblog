@@ -1,0 +1,114 @@
+# 🎮 生活爱好
+
+<div style="text-align: center; padding: 30px 20px; margin-bottom: 40px; background: linear-gradient(135deg, rgba(255, 107, 157, 0.1) 0%, rgba(155, 89, 182, 0.1) 100%); border-radius: 16px;">
+
+## 🌸 代码之外的世界
+
+工作是为了更好的生活，记录那些让我快乐的事物
+
+</div>
+
+## 🎮 喜欢的游戏
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin: 24px 0;">
+
+<a href="https://lolm.qq.com/main.html" target="_blank" style="display: block; padding: 24px; background: var(--vp-c-bg-soft); border-radius: 16px; text-decoration: none; border: 2px solid rgba(200, 155, 60, 0.3); transition: all 0.3s ease;">
+  <div style="font-size: 48px; margin-bottom: 16px;">⚔️</div>
+  <h3 style="margin: 0 0 8px 0; color: #c89b3c;">英雄联盟手游</h3>
+  <p style="color: var(--vp-c-text-2); margin: 0 0 12px 0; font-size: 14px;">随时随地，峡谷见！移动端也能畅快对战</p>
+  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+    <span style="padding: 4px 10px; background: rgba(200, 155, 60, 0.1); color: #c89b3c; border-radius: 12px; font-size: 12px;">MOBA</span>
+    <span style="padding: 4px 10px; background: rgba(200, 155, 60, 0.1); color: #c89b3c; border-radius: 12px; font-size: 12px;">手游</span>
+  </div>
+</a>
+
+<a href="https://lol.qq.com/main.shtml" target="_blank" style="display: block; padding: 24px; background: var(--vp-c-bg-soft); border-radius: 16px; text-decoration: none; border: 2px solid rgba(0, 150, 199, 0.3); transition: all 0.3s ease;">
+  <div style="font-size: 48px; margin-bottom: 16px;">🏆</div>
+  <h3 style="margin: 0 0 8px 0; color: #0096c7;">英雄联盟</h3>
+  <p style="color: var(--vp-c-text-2); margin: 0 0 12px 0; font-size: 14px;">经典端游，召唤师峡谷的热血对决</p>
+  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+    <span style="padding: 4px 10px; background: rgba(0, 150, 199, 0.1); color: #0096c7; border-radius: 12px; font-size: 12px;">MOBA</span>
+    <span style="padding: 4px 10px; background: rgba(0, 150, 199, 0.1); color: #0096c7; border-radius: 12px; font-size: 12px;">端游</span>
+  </div>
+</a>
+
+<a href="https://poe.qq.com/" target="_blank" style="display: block; padding: 24px; background: var(--vp-c-bg-soft); border-radius: 16px; text-decoration: none; border: 2px solid rgba(175, 96, 26, 0.3); transition: all 0.3s ease;">
+  <div style="font-size: 48px; margin-bottom: 16px;">🔥</div>
+  <h3 style="margin: 0 0 8px 0; color: #af601a;">流放之路</h3>
+  <p style="color: var(--vp-c-text-2); margin: 0 0 12px 0; font-size: 14px;">暗黑风格 ARPG，深度的技能与 Build 系统</p>
+  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+    <span style="padding: 4px 10px; background: rgba(175, 96, 26, 0.1); color: #af601a; border-radius: 12px; font-size: 12px;">ARPG</span>
+    <span style="padding: 4px 10px; background: rgba(175, 96, 26, 0.1); color: #af601a; border-radius: 12px; font-size: 12px;">刷刷刷</span>
+  </div>
+</a>
+
+<a href="https://poe2.qq.com/" target="_blank" style="display: block; padding: 24px; background: var(--vp-c-bg-soft); border-radius: 16px; text-decoration: none; border: 2px solid rgba(139, 0, 0, 0.3); transition: all 0.3s ease;">
+  <div style="font-size: 48px; margin-bottom: 16px;">💀</div>
+  <h3 style="margin: 0 0 8px 0; color: #8b0000;">流放之路2</h3>
+  <p style="color: var(--vp-c-text-2); margin: 0 0 12px 0; font-size: 14px;">全新引擎，更加黑暗的瓦尔克拉斯大陆</p>
+  <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+    <span style="padding: 4px 10px; background: rgba(139, 0, 0, 0.1); color: #8b0000; border-radius: 12px; font-size: 12px;">ARPG</span>
+    <span style="padding: 4px 10px; background: rgba(139, 0, 0, 0.1); color: #8b0000; border-radius: 12px; font-size: 12px;">新作</span>
+  </div>
+</a>
+
+</div>
+
+## ✈️ 旅游足迹
+
+<div style="padding: 24px; background: linear-gradient(135deg, rgba(52, 152, 219, 0.08) 0%, rgba(26, 188, 156, 0.08) 100%); border-radius: 16px; margin: 24px 0;">
+
+### 🗺️ 去过的地方
+
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0;">
+  <span style="padding: 10px 20px; background: var(--vp-c-bg-soft); border: 1px solid rgba(52, 152, 219, 0.3); border-radius: 50px; font-size: 14px;">📍 浙江 杭州（家）</span>
+  <span style="padding: 10px 20px; background: var(--vp-c-bg-soft); border: 1px solid rgba(26, 188, 156, 0.3); border-radius: 50px; font-size: 14px;">🏙️ 更多待探索...</span>
+</div>
+
+### 🎯 想去的地方
+
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 20px 0;">
+  <span style="padding: 10px 20px; background: linear-gradient(135deg, #ff6b9d, #9b59b6); color: white; border-radius: 50px; font-size: 14px;">🗼 香港</span>
+  <span style="padding: 10px 20px; background: linear-gradient(135deg, #3498db, #2980b9); color: white; border-radius: 50px; font-size: 14px;">🏔️ 西藏</span>
+  <span style="padding: 10px 20px; background: linear-gradient(135deg, #1abc9c, #16a085); color: white; border-radius: 50px; font-size: 14px;">🌊 三亚</span>
+</div>
+
+</div>
+
+## 🎬 其他爱好
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px 0;">
+
+<div style="padding: 20px; background: var(--vp-c-bg-soft); border-radius: 12px; text-align: center;">
+  <div style="font-size: 40px; margin-bottom: 8px;">🌸</div>
+  <div style="font-weight: 600; color: #ff6b9d;">二次元</div>
+  <p style="font-size: 12px; color: var(--vp-c-text-2); margin: 8px 0 0 0;">动漫、番剧、轻小说</p>
+</div>
+
+<div style="padding: 20px; background: var(--vp-c-bg-soft); border-radius: 12px; text-align: center;">
+  <div style="font-size: 40px; margin-bottom: 8px;">🎵</div>
+  <div style="font-weight: 600; color: #9b59b6;">音乐</div>
+  <p style="font-size: 12px; color: var(--vp-c-text-2); margin: 8px 0 0 0;">ACG、电子、流行</p>
+</div>
+
+<div style="padding: 20px; background: var(--vp-c-bg-soft); border-radius: 12px; text-align: center;">
+  <div style="font-size: 40px; margin-bottom: 8px;">📖</div>
+  <div style="font-weight: 600; color: #3498db;">阅读</div>
+  <p style="font-size: 12px; color: var(--vp-c-text-2); margin: 8px 0 0 0;">技术书籍、小说</p>
+</div>
+
+<div style="padding: 20px; background: var(--vp-c-bg-soft); border-radius: 12px; text-align: center;">
+  <div style="font-size: 40px; margin-bottom: 8px;">💻</div>
+  <div style="font-weight: 600; color: #1abc9c;">折腾</div>
+  <p style="font-size: 12px; color: var(--vp-c-text-2); margin: 8px 0 0 0;">新技术、新工具</p>
+</div>
+
+</div>
+
+---
+
+<div style="text-align: center; margin-top: 40px;">
+
+[返回首页](/) | [联系我](/contact/)
+
+</div>
